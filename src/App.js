@@ -12,6 +12,7 @@ import Footer from "./components/header/footer/Footer";
 import Header from "./components/header/Header";
 import Home from "./pages/Home";
 import Cart from "./pages/Cart";
+import Signin from "./pages/Signin";
 
 const Layout =()=>{
   return (
@@ -27,9 +28,12 @@ const Layout =()=>{
 function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
-      <Route path="/" element={<Layout />}>
+      <Route>
+        <Route path="/" element={<Layout />}>
         <Route index element={<Home />} loader={productData}></Route>
         <Route path="/cart" element={<Cart />}></Route>
+      </Route>
+      <Route path="/signin" element={<Signin />}></Route>
       </Route>
     )
   );

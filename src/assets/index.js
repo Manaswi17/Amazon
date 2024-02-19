@@ -6,6 +6,9 @@ import bannerImgFour from "./banner/bannerImgFour.jpg";
 import bannerImgFive from "./banner/bannerImgFive.jpg";
 import indiaflag from "./indiaflag.png";
 import emptyCart from "./emptyCart.png";
+import darkLogo from "./darkLogo.png";
+
+
 export {
   logo,
   bannerImgOne,
@@ -15,4 +18,5 @@ export {
   bannerImgFive,
   indiaflag,
   emptyCart,
+  darkLogo,
 };
