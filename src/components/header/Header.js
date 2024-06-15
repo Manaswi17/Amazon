@@ -8,6 +8,7 @@ import { allItems } from '../../constants';
 import HeaderBottom from './HeaderBottom';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom'; 
+import Signin from '../../pages/Signin';
 
 const Header = () => {
     const [showAll, setShowAll] = useState(false);
@@ -53,12 +54,14 @@ const Header = () => {
                 </div>
                 {/* Search End*/}
                 {/* Signin start*/}
+                <Link to="/Signin">
                 <div className="flex flex-col items-start justify-center headerHover">
                     <p className='text-xs text-lightText font-light'>Hello, sign in</p>  
                     <p className='text-sm font-semibold -mt-1 text-whitetext hiddle mdl:inline-flex'>
                     Accounts & Lists {" "}
                     <span><ArrowDropDownOutlinedIcon/></span></p>
                 </div>
+                </Link>
                 {/* Signin End*/}
                 {/* Orders Start*/}
                 <div className='hidden lgl:flex flex-col items-start justify-center headerHover '>
